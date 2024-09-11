@@ -1,0 +1,140 @@
+.SecondSEction{
+    padding: 30px 20px;
+    background-image: url(./img/galexy.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .topBarsection{
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+   background-color: #0a34a779;
+  }
+  .SecondSEction::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.793);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+  }
+  .title{
+    font-size:20px;
+    font-weight: 600;
+    color: #ffffff;
+    width: max-content;
+    position: relative;
+  
+  }
+  
+  .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width:70px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #aaff00;
+  }
+  .experties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 10px ;
+  }
+  
+  .html {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 100%, 79%, 0.196);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    border-radius: 6px;
+  }
+  .html img {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .html:hover img {
+    scale: 1.2;
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+    padding: 3px 8px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .html:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .experties{
+      width: 95%;
+      margin:auto;
+      height: auto;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 5px 5px ;
+  
+    }
+    .experties .html{
+       width: 50px;
+       height: 50px;
+       background-color: hsla(0, 100%, 79%, 0.196);
+       backdrop-filter: blur(10px);
+       border-radius: 10px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .html img{
+      width: 35px;
+      height: 35px;
+    }
+    
+  }

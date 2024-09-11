@@ -1,0 +1,691 @@
+.abouteConaint {
+    margin-top: 55px;
+    padding-top: 15px;
+    width: 100%;
+    height: 450px;
+}
+
+.infoSectionAbout {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.firstHeadingAbout {
+    position: relative;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.straightLine {
+    width: 100%;
+    height: 4px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+}
+
+.INTROabout {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+}
+
+.INTROabout h1 {
+    margin-top: 14px;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: -8px;
+}
+
+.INTROabout h1 span {
+    font-size: 28px;
+    font-weight: 900;
+    color: #aaff00;
+
+}
+
+.INTROabout span {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+.SecondHeadingAbout {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+    height: max-content;
+}
+
+.imageSectionAboute {
+    width: 50%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.SMimageSectionAboute {
+    display: none;
+
+}
+
+
+.imageSectionAboute img {
+    background-color: blue;
+    width: 60px;
+    border-radius: 6px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    object-position: center;
+    transition: 0.3s ease;
+    border-top:2px solid #000000;
+    border-bottom:2px solid #000000;
+
+
+}
+
+.imageSectionAboute img:hover {
+    width: 250px;
+    border: 1px solid black;
+}
+
+.infoHoverIMG {
+    position: absolute;
+    top: -8%;
+    font-size: 12px;
+    font-weight: 600;
+    color: red;
+    text-transform: uppercase;
+}
+
+.abouteMeSection {
+    width: 50%;
+    text-align: justify;
+
+}
+
+.footerAbout {
+    width: 100%;
+    background-color: red;
+}
+
+/* education section  */
+.EducationSection {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    backdrop-filter: blur(25px);
+}
+
+.educationDetail {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    background: #eaeaea;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.tenthClass {
+    margin-top: 15px;
+    width: 60%;
+}
+
+.imageVies {
+    width: 40%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+
+}
+.imageSection{
+    width: 330px;
+    height: 220px;
+    position: relative;
+}
+.imageVies img {
+    width: 330px;
+    height: 220px;
+    object-position: top center;
+    display: flex;
+    opacity: 85%;
+    border-radius: 8px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+.buttoncertificat{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.867);
+    padding: 5px 10px;
+    color: white;
+    text-transform:capitalize;
+    right: 0;
+    bottom: 25px;
+    border-radius: 6px 0px 0px 6px;
+    transition: all 0.5s ease;
+
+}
+.buttoncertificat:hover{
+    background-color: #000070;
+}
+.tenthClass div {
+    margin-bottom: 10px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    color: rgba(0, 17, 254, 0.419);
+}
+.tenthClass div h1{
+    font-size: 22px;
+}
+
+.tenthClass div i {
+    color: rgb(21, 136, 0);
+}
+
+.tenthClass ul h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #8800ff3b;
+    max-width: fit-content;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.541);
+    padding: 3px;
+    font-weight: 600;
+}
+
+.tenthClass ul li:nth-child(2){
+    list-style: none;
+    margin-left: 8px;
+}
+.tenthClass ul li {
+    list-style-type: circle;
+    margin-left: 25px;
+    font-size: 16px;
+    margin-top: 5px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .EducationSection {
+        width: 98%;
+        margin: 10px auto;
+        height: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        backdrop-filter: blur(25px);
+    }
+    .educationDetail{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .hedingAboute{
+        margin-left: 10px;
+
+    }
+    .tenthClass {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .imageVies {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px; 
+        position: relative;
+    }
+    .imageSection{
+        width: 100%;
+        height: 220px;
+        position: relative;
+    }
+    .imageVies img {
+        width: 100%;
+        height: 220px;
+        object-position: top center;
+        display: flex;
+        flex-shrink: 150px;
+        opacity: 85%;
+     
+    }
+    .buttoncertificat{
+        position: absolute;
+        background: #000;
+        left: 0;
+        bottom: 0;
+        border-radius: 0px 0px 6px 6px;
+    }
+    .buttoncertificat:hover{
+        background: #320101;
+    }
+    .abouteMe{
+        margin-left: -3px;
+    }
+
+    .tenthClass ul h3 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: #8800ff3b;
+        max-width: fit-content;
+        border-radius: 5px;
+        font-weight: 900;
+        color: rgba(0, 0, 0, 0.579);
+        padding: 3px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .tenthClass ul li {
+        list-style-type: circle;
+        margin-left: 25px;
+        font-size: 14px;
+        margin-top: 5px;
+    
+    }
+    .tenthClass div h1{
+        
+        font-size: 16px;
+    }
+
+}
+
+/* section two aboute area of intrest  */
+.thirdHeadingAbout {
+    width: 100%;
+    border-radius: 10px;
+    height: max-content;
+    padding-top: 25px;
+    display: flex;
+    position: relative;
+    background: linear-gradient(to left, #ffffff70, #f6730099);
+    margin-bottom: 25px;
+    z-index: -1;
+}
+
+.thirdHeadingAbout::before {
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(100px);
+    z-index: -1;
+}
+
+.thingsIlove {
+    padding-left: 50px;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.containtLOVE {
+    display: flex;
+    flex-wrap: wrap;
+    background: #00000028;
+    gap: 20px;
+    width: 90%;
+    margin-top: 13px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.hedingAboute {
+    width: max-content;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+.hedingAboute::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    height: 1.5px;
+    background-color: #000000;
+}
+
+.containtLOVE img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.thingsIDo {
+    width: 80%;
+    padding-bottom: 15px;
+}
+
+.thingILoveDO1 {
+    width: 50%;
+}
+
+.mainComponent {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.123);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    width: 95%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.thingsIdo1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.thingsIdo1 p {
+    list-style: none;
+    color: white;
+    font-size: 16px;
+}
+
+.thingsIdo1 span {
+    color: #a2ff00;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .abouteConaint {
+        margin-top: 55px;
+        padding-top: 10px;
+        width: 100%;
+        height: 450px;
+    }
+   
+
+    .infoSectionAbout {
+        width: 98%;
+        height: auto;
+        margin: auto;
+    }
+
+    .firstHeadingAbout {
+        position: relative;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .INTROabout h1 {
+        margin-top: 14px;
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        margin-bottom: -10px;
+    }
+
+    .INTROabout span {
+        font-size: 8px;
+        font-weight: 600;
+    }
+
+
+    .SecondHeadingAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+        height: max-content;
+    }
+
+    .imageSectionAboute {
+        display: none;
+    }
+
+    .SMimageSectionAboute {
+        width: 100%;
+        height: 250px;
+        border-radius: 6px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .SMimageSectionAboute img {
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.8s ease-in-out, z-index 0.3s;
+        border-top:3px solid black;
+        border-bottom:3px solid black;
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        position: absolute;
+        width: 180px;
+        height: 220px;
+        cursor: pointer;
+    }
+
+    .image1 {
+        transform: translateX(-50%);
+        z-index: 1;
+        object-fit: fill;
+        object-position: right;
+        transition: all 0.3s ease;
+    }
+
+    .image2 {
+        transform: translateX(50%);
+        z-index: 1;
+        object-position: left;
+    }
+
+    .image3 {
+        width: 220px;
+        height: 250px;
+        z-index: 3;
+        transition: transform 0.8s ease-in-out, z-index 0.3s;
+    }
+
+    .image1:hover~.image3,
+    .image2:hover~.image3 {
+        transform: scale(0.9);
+        z-index: 1;
+    }
+
+    .image1:hover {
+        z-index: 2;
+        transform: translateX(-50%) scale(1.1);
+        object-position: center;
+    }
+
+    .image2:hover {
+        z-index: 2;
+        transform: translateX(50%) scale(1.1);
+        object-position: center;
+        /* Scale up image 2 on hover */
+    }
+
+
+    .abouteMeSection {
+        width: 100%;
+        text-align: justify;
+
+    }
+
+
+    .thirdHeadingAbout {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin: auto;
+        padding: 25px 15px;
+        margin-bottom: 20px;
+    }
+
+    .thingsIlove {
+        padding-left: 10px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .containtLOVE {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 95%;
+        padding: 10px;
+    }
+
+    .containtLOVE img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .thingsIDo {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .mainComponent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thingILoveDO1 {
+        width: 100%;
+    }
+
+    .thingsIdo1 {
+        width: 100%;
+    }
+
+    .thingsIdo1 p {
+        list-style: none;
+        color: white;
+        font-size: 13px;
+    }
+
+    .thingsIdo1 span {
+        color: #a2ff00;
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+
+/* section experiance and certificates */
+
+.experianceSection{
+  width: 100%;
+  height: 25%;
+  background: linear-gradient(to right, #49494987, #0a03cfa6);
+  padding: 5px;
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.sectionExperiance{
+  width: 50%;
+  padding: 10px;
+}
+.sectionCertificate{
+  width: 50%;
+  padding: 10px;
+}
+.geadingExp{
+    font-size: 20px;
+    margin-left: -1px;
+}
+.sectionExperiance ul {
+  background-color: #ffffff4d;
+  border-radius: 6px;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sectionExperiance ul li{
+    font-size: 15px;
+    list-style-type:circle;
+    margin-left: 16px;
+
+}
+
+.sectionCertificate ul {
+    background-color: #ffffff4d;
+    border-radius: 6px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+.sectionCertificate ul li{
+    font-size: 15px;
+    list-style-type:circle;
+    margin-left: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .experianceSection{
+        width: 98%;
+        margin: 0 auto;
+        height: 25%;
+        background-color: #eaeaea;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        border-radius: 10px;
+      }
+      .sectionExperiance{
+        width: 100%;
+        padding: 10px;
+      }
+      .sectionCertificate{
+        width: 100%;
+        padding: 10px;
+      }
+      .sectionExperiance ul li{
+        font-size: 13px;
+    }
+      .sectionCertificate ul li{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,498 @@
+.ContactSection {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    position: relative;
+}
+
+.ContactSection::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-image2.jpg");
+    background-position: top left;
+    background-size: cover;
+    z-index: -1;
+}
+
+.contactChild1 {
+    position: relative;
+    background-color: rgba(237, 237, 237, 0.236);
+    width: 85%;
+    margin: auto;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.infoCnt {
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
+
+.imagesection img {
+    height: 100%;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.shadowOnfirstBg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shadowOnfirstBg1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+    opacity: 25%;
+}
+
+.contactChild1{
+    background-color: rgba(237, 237, 237, 0.236);
+    width: 85%;
+    height: 200px;
+    margin: auto;
+    backdrop-filter: blur(50px);
+    border-radius:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.infoCnt{
+    display: flex;
+    height: 100%;
+    width: 50%;
+   }   
+
+.imagesection img{
+  height: 100%;
+  width: 200px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.shadowOnfirstBg1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   }
+   .shadowOnfirstBg1::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgb(0, 0, 0); 
+     z-index: -1;
+     opacity: 25%;
+   }
+   .naMEPLATE{
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    z-index: 1;
+    font-size:32px;
+    font-weight: 900;
+    letter-spacing:3px;
+   }
+   .naMEPLATE h1::first-letter{
+    color: #aaff00;
+   }
+
+   .naMEPLATE h1::before{
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      width: 150px;
+      border-radius: 15px;
+      background-color: #aaff00;
+      height: 3px;
+   }
+.contactDetail{
+    width: max-content;
+    height: 100%;
+    display: flex;
+}
+.medisSection{
+    position: relative;
+    width: 30%;
+    height: 100%; 
+}
+.leftsideinfo{
+    height: 100%;
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100% );
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0, 0, 130, 0.637);
+    z-index: -1;
+
+}
+.socialMedia{
+    width: max-content;
+    padding: 0px 20px;
+    height: 60px;
+    background-color: rgba(255, 0, 0, 0.341);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 50;
+    top: 40px;
+    right: 40px;
+    border-radius: 8px;
+}
+.medisSection h2{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 15px;
+  z-index: 1;
+  right: 12%;
+}
+
+.SocialIcon{
+    padding: 2px 12px;
+    border-radius: 2px;
+    font-size: 25px;
+    background-color: white;
+    transition: color 0.3s ease;
+    position: relative;
+    color: blue;
+    cursor: pointer;
+    overflow: hidden;
+}
+.SocialIcon i{
+    position: relative;
+    z-index: 1;
+}
+.SocialIcon::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(251, 46, 0);
+    overflow: hidden;
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+.instagram{
+    color: red;
+}
+.whatsapp{
+    color: green;
+}
+.whatsapp::before{
+    background-color: rgb(0, 211, 0);
+}
+.github{
+    color: rgb(0, 0, 0);
+}
+.github::before{
+    background-color: #000000;
+}
+.linkdin{
+    color: #48bad1;
+}
+.linkdin::before{
+    background-color: #48bad1;
+}
+.SocialIcon:hover{
+    color: white;
+}
+.SocialIcon:hover::before {
+    left: 0;
+
+}
+
+.SocialIcon span {
+    position: relative;
+    z-index: 1;
+}
+.iconContactpage{
+  background-color: rgb(3, 0, 87);
+  padding: 25px 12px;
+}
+.iconContactpage p{
+    color: white;
+    margin-bottom: 22px;
+}
+.contactdetailSection{
+  color: rgb(255, 255, 255);
+  padding: 25px 12px;
+  width: 300px;
+}
+.contactdetailSection p{
+    margin-bottom: 23px;
+
+}
+
+
+
+.containtDetailPage {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contactChild2 {
+    background-color: rgba(237, 237, 237, 0.236);
+    width: 85%;
+    padding: 15px;
+    margin: auto;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: row;
+    margin-bottom: 50px;
+    overflow-y: hidden;
+    gap: 10px;
+}
+
+.ContactMeForm {
+    width: 60%;
+}
+
+.ContactMeForm h1 {
+    font-size: 28px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.ContactMeForm h1::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 60px;
+    height: 5px;
+    background: linear-gradient(to left, #00ff1a, #0026ff);
+    border-radius: 50px;
+    z-index: -2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    gap: 15px;
+}
+
+.ContactDetail {
+    width: 40%;
+    padding: 100px 50px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.groupsection {
+    width: 100%;
+}
+
+.groupsection input,
+textarea {
+    width: 100%;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.218);
+    backdrop-filter: blur(15px);
+    outline: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.groupsection input:focus,
+textarea:focus {
+    border: 1px solid #fff700;
+}
+
+.groupsection textarea {
+    padding: 10px;
+    outline: none;
+    color: white;
+}
+
+.ContactDetail h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ContactDetail p {
+    text-align: justify;
+}
+
+.ContactDetail h1::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 40px;
+    height: 5px;
+    background: linear-gradient(to left, #22ff00, #0800ff);
+    border-radius: 50px;
+    z-index: -2;
+}
+
+.btnSentSMS {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    border-radius: 5px;
+}
+
+.btnSentSMS::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 30, 0.462);
+    transition: left 0.5s ease;
+    z-index: 1;
+}
+
+.btnSentSMS:hover::before {
+    left: 0;
+}
+
+.btnSentSMS span {
+    position: relative;
+    z-index: 1;
+}
+.smallScreen{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .ContactSection {
+        padding-top: 90px;
+    }
+
+    .contactChild1,
+    .contactChild2 {
+        width: 95%;
+    }
+
+    .imagesection img {
+        display: none;
+    }
+    .iconContactpage{
+        background-color: rgb(3, 0, 87);
+        padding: 25px 12px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+    .medisSection {
+        display: none;
+    
+    }
+    .contactdetailSection p{
+        font-size:0.9rem;
+
+    }
+
+    .ContactMeForm {
+        width: 100%;
+    }
+
+    .ContactDetail {
+        display: none;
+    }
+    .smallScreen{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        width: 95%;
+        gap: 10px;
+        margin: auto;
+        padding: 8px;
+    }
+    .smallScreen img{
+        width:100px;
+        border-top-left-radius: 15%;
+        border-bottom-right-radius: 15%;
+        border-top-right-radius: 3%;
+        border-bottom-left-radius: 3%;
+        height: 100px;
+    }
+    .socialMediaSM{
+        width:max-content;
+        padding: 0px 20px;
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 50;
+        border-radius: 8px;
+    }
+    .SocialIconSM{
+        padding: 7px 15px;
+        border-radius: 2px;
+        font-size: 18px;
+        background-color: white;
+        color: blue;
+        transition: color 0.3s ease;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .SocialIconSM i{
+        position: relative;
+        z-index: 1;
+    }
+    .SocialIconSM::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 5, 76);
+        overflow: hidden;
+        transition: left 0.3s ease;
+        z-index: 1;
+    }
+    .naMEPLATE{
+        display: none;
+    }
+}

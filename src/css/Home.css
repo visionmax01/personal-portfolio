@@ -1,0 +1,61 @@
+/* Home.css */
+
+/* Container for the carousel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Carousel slide that holds images */
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Individual carousel items */
+  .carousel-item {
+    flex: 1 0 33.33%; /* Show 3 items at a time on desktop */
+    box-sizing: border-box;
+    padding: 0 10px; /* Add some spacing between images */
+  }
+  
+  /* Hide buttons when at the start or end */
+  .carousel-control.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Make carousel scrollable on mobile */
+  @media (max-width: 768px) {
+    .carousel-item {
+      flex: 1 0 100%; /* Show 1 item at a time on mobile */
+    }
+  
+    .carousel-container {
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  
+  /* Style for carousel control buttons */
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-control.left {
+    left: 10px;
+  }
+  
+  .carousel-control.right {
+    right: 10px;
+  }
+  
