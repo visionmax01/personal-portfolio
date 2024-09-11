@@ -47,13 +47,13 @@ const About = () => {
                             <img className="image3" src={myimage2} alt="Profile" />
                         </div>
                         <div className="abouteMeSection">
-                            <h1 className="md:text-2xl text-lg text-center uppercase font-extrabold">Introduction</h1>
+                            <h1 className="md:text-2xl text-lg md:text-left text-center uppercase font-extrabold">Introduction</h1>
                             <p className="mb-4">I'm a web developer who is passionate about building beautiful and functional websites. I'm also
                                 passionate about learning new technologies and new ways of doing things.</p>
                         </div>
                     </div>
                     <div className="EducationSection">
-                        <h2 className="md:text-2xl text-xl text-center uppercase font-extrabold ml-2">Education</h2>
+                        <h2 className="md:text-2xl text-xl md:text-left text-center uppercase font-extrabold ml-2">Education</h2>
                         <div className="educationDetail">
                             <div className="tenthClass">
                                 <div>

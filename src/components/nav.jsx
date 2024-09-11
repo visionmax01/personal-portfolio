@@ -17,16 +17,16 @@ const Nav = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full h-[55px] bg-gradient-to-r from-blue-900 to-pink-200 shadow-md z-50 flex items-center justify-between px-4">
+    <nav className="fixed top-0 w-full h-[55px] bg-gradient-to-r from-blue-900 to-pink-200 shadow-md z-50 flex items-center justify-between md:pl-4 px-4">
       <div className="flex items-center space-x-4">
-        <a className="text-white relative text-2xl font-extrabold" href="/">
+        <a className="text-white relative md:text-2xl text-xl font-extrabold" href="/">
           BHISHAN SAH
         </a>
         <span className="h-0.5 w-20 bg-lime-400 inline-block absolute left-0 bottom-4  md:bottom-3"></span>
       </div>
 
       {/* Desktop Links */}
-      <div className="hidden md:flex items-center space-x-6 bg-gradient-to-r to-blue-900 from-pink-200 py-1 px-6 rounded">
+      <div className="hidden md:flex items-center justify-center space-x-3 bg-gradient-to-r to-blue-900 from-pink-200 py-1 px-3 rounded-l-md text-sm font-bold">
         <a href="/" className={`text-white hover:bg-primary-darkBlue px-3 py-1 rounded ${isActive("/")}`}>Home</a>
         <a href="/news" className={`text-white hover:bg-primary-darkBlue px-3 py-1 rounded ${isActive("/news")}`}>News</a>
         <a href="/contact" className={`text-white hover:bg-primary-darkBlue px-3 py-1 rounded ${isActive("/contact")}`}>Contact</a>
